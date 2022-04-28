@@ -15,18 +15,44 @@
                 <div class="avatar">
                     <img src="images/FotoPerfil.svg" alt="Foto Pessoal" width="200px" height="200px" />
                 </div>
-                <h1>Júverson Lessa</h1>
-                <a href="https://github.com/juversonlessa" target="_blank">                   
-                    <img src="images/github.svg" alt="ícone github" />
-                </a>
-                <a href="https://instagram.com/juversonlessa" target="_blank">
-                    <img src="images/instagram.svg" alt="ícone instagram" />
-                </a>
-                <a href="https://www.linkedin.com/in/j%C3%BAverson-lessa-3611581b5/" target="_blank">
-                     <img src="images/linkedin.svg" alt="ícone linkedin"  />
-                </a>
+                <h1 id="userName">Júverson Lessa</h1>
                 <p>Businessman, front end developer and philanthropist</p>
+                <ul id="socialLinks">
+                    <li class="github">
+                        <a href="https://github.com/juversonlessa" target="_blank">                   
+                            <img src="images/github.svg" alt="ícone github" />
+                        </a>
+                    </li>
+                    <li class="instagram">
+                        <a href="https://instagram.com/juversonlessa" target="_blank">
+                            <img src="images/instagram.svg" alt="ícone instagram" />
+                        </a>
+                    </li>
+                    <li class="linkedin">
+                        <a href="https://www.linkedin.com/in/j%C3%BAverson-lessa-3611581b5/" target="_blank">
+                            <img src="images/linkedin.svg" alt="ícone linkedin"  />
+                        </a>
+                    </li>
+                </ul>
             </div>
         </main>
+        <script>
+            const links = {
+                github: "juversonlessa",
+                instagram: "juversonlessa",
+                linkedin: "juversonlessa",
+            }
+            
+            function changeSocialMediaLinks() {
+                for (let li of socialLinks.children){
+                   const social = li.getAttribute("class")
+                   li.children[0].href = "https://instagram.com/juversonlessa"
+                   // alert(li.children[0].href)
+                }
+            }
+
+            changeSocialMediaLinks()
+
+        </script>
     </body>
 </html>
