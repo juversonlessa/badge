@@ -3,16 +3,18 @@
 }
 
 body {
+    display: flex;
     background: url(images/primaryBackground.svg);
-    display: grid;
-    place-items: center;
     font-family: 'Roboto', sans-serif;
 }
 
 main {
     background: url(images/background.svg);
-    width: 300px;
-    height: 450px;
+    width: 30.0rem;
+    height: 45.0rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
 }
 
 .avatar {
