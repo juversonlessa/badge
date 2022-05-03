@@ -2,7 +2,8 @@
 
 <html>
     <head>
-        <title>NLW7</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Badge</title>
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -36,23 +37,24 @@
                 </ul>
             </div>
         </main>
-        <script>
-            const links = {
+<!--         <script>
+            const linksSocialMedia = {
                 github: "juversonlessa",
-                instagram: "juversonlessa",
+                instagram: "taianassantos",
                 linkedin: "juversonlessa",
             }
             
             function changeSocialMediaLinks() {
                 for (let li of socialLinks.children){
                    const social = li.getAttribute("class")
-                   li.children[0].href = "https://instagram.com/juversonlessa"
-                   // alert(li.children[0].href)
+
+                   li.children[0].href = `https://${social}.com/${linksSocialMedia{social}}`
+                   alert(li.children[0].href)
                 }
             }
 
             changeSocialMediaLinks()
 
-        </script>
+        </script> -->
     </body>
 </html>
