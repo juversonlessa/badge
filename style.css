@@ -14,7 +14,6 @@ main {
     height: 45.0rem;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: auto;
 }
 
 .avatar {
@@ -30,6 +29,17 @@ main {
     text-align: center;
 }
 
+.aditionalInfo {
+    margin-inline: auto;
+    margin-top: 25px;
+    max-width: 250px;
+    text-align: center;
+}
+
+.caies {
+    margin-top: 5px;
+}
+
 h1 {
     font-size: 2rem;
 }
@@ -42,6 +52,7 @@ ul {
 
 li {
     display: inline-block;
+    margin-top: 5px;
     margin-left: auto;
     margin-right: auto;
 }
