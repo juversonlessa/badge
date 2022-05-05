@@ -31,13 +31,14 @@ main {
 
 .aditionalInfo {
     margin-inline: auto;
-    margin-top: 25px;
     max-width: 250px;
     text-align: center;
 }
 
 .caies {
     margin-top: 5px;
+    margin-inline: auto;
+    max-width: 250px;
 }
 
 h1 {
